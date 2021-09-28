@@ -1,0 +1,78 @@
+<center>
+<div id="Flight" class="tabcontent">
+<fieldset>
+                           <h1> Book Domestic and International Flights </h1>
+                <div class="waybtn">
+                    <button onclick="return SelectTripType('O')" class="slt oneway">One way</button>
+                    <button class="roundway" onclick="return SelectTripType('R')">Round trip</button>
+					               </div>
+				<br>                  
+                        <strong>From : </strong>
+                        <input type="text" name="flying_from" value="" class="fly-input" placeholder="From" id="flying_from" />                         
+						 
+					<strong>To : </strong>
+                        <input name="flying_to" type="text" class="fly-input" value="" placeholder="To" id="flying_to" />                        
+                    <br><br>					
+					<strong> Date :  </strong>
+                    <input name="date" type="date" class="date_from" value="" placeholder="dd/mm/yy" id="date">
+				                   <br><br>
+                    <div class="col" id="adult_div">
+                        <input type="hidden" id="adult" name="adult" value="1" />
+                        <strong>Travellers & Class <i class="fa fa-angle-down"></i></strong>                       
+                        <b id="cabin_id">Economy</b>
+                    </div>
+                    <div class="popup adultdrop">
+                        <span class="adult1">
+                                Adults (12+)                       
+                                <input type="button" class="minus maincalulation" value="-" id="sub1minus">
+                                <input type="text" class="count" value="1" id="sub1">
+                                <input type="button" class="plus maincalulation" value="+" id="sub1plus">
+                            </span>
+                        <span class="adult1">                           
+                                Children (2-11)
+                                <input type="button" class="minus maincalulation" value="-" id="sub2minus">
+                                <input type="text" class="count" value="0" id="sub2">
+                                <input type="button" class="plus maincalulation" value="+" id="sub2plus">
+                            </span>
+                        <span class="adult1">                            
+                               Infant                         
+                                <input type="button" class="minus maincalulation" value="-" id="sub3minus">
+                                <input type="text" class="count" value="0" id="sub3">
+                                <input type="button" class="plus maincalulation" value="+" id="sub3plus">
+                            </span>
+                        <br><br>
+                           <div>
+                            <strong>Choose Travel Class</strong>
+                        </div>
+                        <div class="search-sixbox">
+                            <select name="ddlCabinClass" id="ddlCabinClass" onchange="getval_Cabin();" class=" fly-cabin-input ac_input">
+                                <option value="2" selected="selected">Economy</option>
+                                <option value="3">Premium Economy</option>
+                                <option value="4">Business</option>
+                                <option value="6">First</option>
+                            </select>
+							<br>
+                <input type="submit" onclick="return CheckValidation();" id="searchengine_btn" value="Search Flight" />
+                            </div>
+                        </div>
+						</fieldset>
+<fieldset>
+<div class="container">
+
+    <h3 class="text-center" style="margin:10px 0 20px 0px;"> Recent Blog </h3>   
+
+            <a href="/flight-tips/how-to-search-domestic-flight-offers.html" >
+                <p>How to Search Domestic <br />Flight Offers <br /> </p> </a>
+      
+            <a href="/flight-tips/safety-tips-to-do-air-travel-during-covid19-pandemic.html" >
+                <p>Is it Safe to Do Air Travel<br /> During the Covid-19 Pandemic?<br /></p></a>
+      
+            <a href="/destinations/top-places-to-visit-in-india-during-monsoon.html" >
+                <p> Top Places to Visit<br /> in India During Monsoon <br /> </p></a>
+				
+                <a href='/rescheduling' title="Cancel or Rescheduling">Rescheduling/Cancel</a><br>
+                <a href='/contact-us' title="Contact us">Support</a>
+				</div>					
+					</fieldset>
+				</center>
+				

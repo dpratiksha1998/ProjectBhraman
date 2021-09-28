@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet" />
+    <script src="/bundles/Script?v=22072021"></script>
+	</head>
+<body>
+ 
+<ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#flight">Flight</a></li>
+    <li><a href="#train">Train</a></li>
+    <li><a href="#bus">bus</a></li>
+  <li><a href ="offers">Offers</a></li>
+	<li><a href="#contact">Costomer Service</a></li>
+	 <li><a href="#login">Login</a></li>
+  <li class="right"><a href="#about">About us</a></li>
+ </ul>
+</body>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+</script
+
+</html>
